@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+#data {
+    background: whitesmoke;
+    height: 100vh;
+    padding-top: 80px;
+    padding-left: 300px;
+}
+#data .p1{
+    margin-top: 50px;
+    height: 400px;
+    float: right;
+    width: 550px;
+}
+#data p{
+  margin-top: 45px;
+  width: 400px;
+  margin-top: 150px;
+}
+
+#data-2 {
+    background: whitesmoke;
+    height: 100vh;
+    padding-top: 80px;
+    padding-left: 300px;
+}
+#data-2 .p1{
+    margin-top: 50px;
+    height: 400px;
+    float: right;
+    width: 550px;
+}
+#data-2 p{
+  margin-top: 150px;
+  width: 400px;
+}
+
+#data-3 {
+    background: whitesmoke;
+    height: 100vh;
+    padding-top: 80px;
+    padding-left: 300px;
+}
+#data-3 .p1{
+    margin-top: 50px;
+    height: 400px;
+    float: right;
+    width: 550px;
+}
+#data-3 p{
+  margin-top: 150px;
+  width: 400px;
+}
+
+nav {
+    background: #1D2951;
+    line-height: 80px;
+    position: fixed;
+    width: 100%;
+}
+
+label {
+    line-height: 70px;
+    font-size: 30px;
+    color: white;
+    font-weight: 200;
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+nav i {
+    font-size: 18px;
+    margin-right: 20px;
+    color: white;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 20px;
+    padding: 6px 15px;
+    font-weight: 200;
+    border-radius: 3px;
+}
+
+nav ul li a:hover {
+    background-color: rgb(49, 27, 214);
+    color: white;
+    transition: 0.5s;
+}
+
+.side-menu {
+    overflow: auto;
+    position: fixed;
+    background: #1D2951;
+    width: 250px;
+    height: 100%;
+    margin-top: 70px;
+}
+
+.side-menu center img {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    margin-top: 0;
+    border: 3px solid white;
+}
+
+.side-menu center h2 {
+    color: white;
+}
+
+.side-menu a {
+    display: block;
+    line-height: 60px;
+    transition: 0.5s;
+}
+
+.side-menu a:hover {
+    background: rgb(20, 54, 165);
+    padding-left: 20px;
+}
+
+.side-menu span {
+    font-size: 18px;
+    margin-left: 10px;
+    color: white;
+}
+
+.side-menu i {
+    font-size: 18px;
+    margin-left: 20px;
+    color: white;
+}
+
+nav .menu-bar {
+    float: left;
+    margin-top: 20px;
+    display: none;
+    margin-right: 20px;
+}
+
+#menu {
+    display: none;
+}
+
+@media (max-width:800px) {
+    .side-menu a span {
+        display: none;
+    }
+
+    .side-menu center {
+        display: none;
+    }
+
+    .side-menu a i {
+        display: none;
+        
+    }
+
+    .data {
+        margin-left: 100px;
+    }
+}
+
+@media (max-width:850px) {
+    .data {
+        display: none;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    .side-menu {
+        width: 250px;
+        text-align: left;
+        left: -100%;
+        background: #1D2951;
+        transition: all 0.5s;
+    }
+
+    .side-menu a span {
+      display: block;
+    font-size: 12px;
+    margin-left: 10px;
+    color: white;
+}
+
+    .side-menu a i {
+      display: block;
+        font-size: 12px;
+        margin-left: 20px;
+        color: white;
+}
+
+    nav .menu-bar {
+        display: block;
+    }
+}
+
+#menu:checked~.side-menu {
+    left: 0;
+}
